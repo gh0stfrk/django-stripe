@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>exeEscape</title>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="flex justify-between flex-col p-4 sm:flex-row">
+        <div class="flex justify-between items-center">
+            <a href="{% url 'home' %}">
+                <h1 class="font-mono text-3xl">exeEscape</h1>
+            </a>
+            <img class="sm:hidden burger" src="{% static 'assets/hamburger.svg' %}" alt="hamburger menu">
+        </div>
+        <div class="hidden sm:block links mt-2">
+            <ul class="flex flex-col gap-3 items-center sm:flex-row sm:text-center">
+                <li><a href="{% url 'stories' %}">stories</a></li>
+                <li><a href="{% url 'projects' %}">projects</a></li>
+                <li class="flex flex-row gap-3 bg-black p-1 px-3 rounded-md text-white hover:bg-twitter-blue"><a class="flex flex-row gap-3" href="https://twitter.com/intent/tweet?text=Tired%20of%20smelly%20nerds%20mansplaining%20code%3F%20%20%20EXE%20escape%20lets%20you%20use%20open-source%20apps%20without%20the%20jargon.%20Donate%20%26%20reclaim%20your%20right%20to%20click-and-run!%20%23democratizetech%20%23nocodezone%20%23StupidSmellyNerds" target="_blank">share <img src="{% static 'assets/twitter.svg' %}" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static 'js/base.js' %}" difer></script>
+</body>
+</html>

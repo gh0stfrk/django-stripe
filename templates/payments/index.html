@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="main flex flex-col sm:flex-row p-4 gap-7 sm:justify-around mt-5 items-center">
+    <div class="flex gap-3 flex-col justify-between items-center sm:items-strech">
+        <p class="font-mono max-w-xl mb-5">
+            EXE escape is the project to create binaries for major open source projects to have simpler and easiest way
+            of using open source code, cause everyone is not a developer, i.e <b>STUPID FUCKING SMELLY NERDS.</b>
+        </p>
+
+        <p class="font-mono font-semibold text-center">
+            Donate and help people keep their calm.
+        </p>
+        <a class="font-mono text-l text-white bg-black p-3 rounded-md text-center max-w-xs hover:bg-nerd-blue hover:text-black"
+            id="checkoutbtn">
+            Create EXE's
+        </a>
+    </div>
+    <div>
+        <div class="">
+            <img class="" src="{% static 'assets/hero_image.png'%}" alt="smelly_nerd">
+        </div>
+    </div>
+</div>
+
+<div class="twitter-references">
+    <h1 class="text-3xl text-center m-5">Inspiration</h1>
+
+    <div class="tweets flex flex-row flex-wrap gap-2 p-4 justify-center">
+        <div class="img-holder">
+            <img class="sm:max-w-xl min-w-80 rounded-xl" src="{% static 'assets/tweet1.png' %}" alt="smelly_nerd">
+        </div>
+        <div class="img-holder">
+            <img class="sm:max-w-xl min-w-80 rounded-xl" src="{% static 'assets/tweet2.png' %}" alt="smelly_nerd">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
