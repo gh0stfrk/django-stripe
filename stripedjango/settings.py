@@ -31,9 +31,9 @@ SECRET_KEY = env('DJANGO_SECRET_KEY', default='django-insecure-tckvhfo9yeev)1_pm
 # DEBUG = False
 DEBUG = env('DJANGO_DEBUG', default=False)
 
-ALLOWED_HOSTS = ['https://django-stripe-sqgd.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['django-stripe-sqgd.onrender.com', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://django-stripe-sqgd.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['django-stripe-sqgd.onrender.com']
 
 # Application definition
 
