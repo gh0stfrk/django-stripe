@@ -35,7 +35,7 @@ def stripe_config(request: HttpRequest):
 @csrf_exempt
 def create_checkout_session(request: HttpRequest):
     if request.method == 'GET':
-        domain = "http://localhost:8000/"
+        domain = "https://django-stripe-sqgd.onrender.com/"
         stripe.api_key = settings.STRIPE_SECRET_KEY
 
         try:
