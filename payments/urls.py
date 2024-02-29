@@ -9,4 +9,5 @@ urlpatterns = [
    path('cancelled/', views.cancel, name='cancel'),
    path('stories/', StoriesView.as_view(), name='stories'),
    path('projects/', ProjectsView.as_view(), name='projects'),
+   path('success/', views.success, name='success')
 ]  
