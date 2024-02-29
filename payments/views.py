@@ -15,9 +15,16 @@ def home(request):
 
 def cancel(request):
     """
-    Cancel page view
+    Post Transaction Canceled
     """
     return render(request, 'payments/abort-payment.html', context=None)
+
+def success(request):
+    """
+    Post Transaction success
+    """
+    return render(request, 'payments/success.html')
+
 
 class StoriesView(TemplateView):
     template_name = 'payments/stories.html'
