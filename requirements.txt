@@ -4,7 +4,9 @@ charset-normalizer==3.3.2
 Django==4.2.3
 django-browser-reload==1.12.1
 django-environ==0.11.2
+gunicorn==21.2.0
 idna==3.6
+packaging==23.2
 requests==2.31.0
 sqlparse==0.4.4
 stripe==8.4.0
